@@ -1,0 +1,20 @@
+.slider{
+    padding: 0 5rem;
+    margin: 6rem 0;
+    height: 7rem;
+    width: 10rem;
+}
+.slider ul{
+    height: 7rem;
+    width: 100vw;
+    position: relative;
+}
+
+.slider li{
+    display: inline-block;
+}
+.slider svg{
+    width: 7rem;
+    height: 7rem;
+    margin-right: 4rem;
+}
