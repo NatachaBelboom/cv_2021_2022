@@ -1,0 +1,64 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+
+
+html {
+    font-size: 10px;
+}
+
+body, body * {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+body{
+    font-family: Museo-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.sro {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    box-sizing: content-box;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+@media (min-width: $lg){
+    .container {
+        padding: 0 14rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $xl){
+    .container {
+        max-width: 1220px;
+        padding: 0 6rem;
+        margin: 0 auto;
+    }
+}
+
+
+@import "buttons";
+@import "header";
+@import "footer";
+@import "intro";
+@import "slider";
+@import "course";
+@import "project";
+@import "temoignages";

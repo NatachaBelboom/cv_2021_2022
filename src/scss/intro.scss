@@ -1,0 +1,190 @@
+.title{
+    display: block;
+    font-family: Helvetica, 'Museo-sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #17538F;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+}
+.course {
+    text-align: center;
+}
+
+.subTitle{
+    font-family: Utopia, sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.natImg__container img{
+    width: 100%;
+}
+
+.text{
+    color: #707070;
+    line-height: 2.7rem;
+    margin-bottom: 4rem;
+}
+
+.intro{
+    &__container{
+        padding: 5rem 0 2.5rem;
+    }
+
+    & h2{
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+    &__project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    & li{
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & svg{
+            margin-right: 2rem;
+        }
+    }
+
+    &__infos{
+        box-shadow: 0 1.9rem 3.8rem rgba(61,61,61,0.16);
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.infoAbout{
+    margin-bottom: 30px;
+    padding: 2.5rem 3rem;
+
+
+    & div{
+        display: flex;
+        align-items: center;
+    }
+
+    & p{
+        margin-top: .5rem;
+        margin-left: 3.4rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: #707070;
+    }
+
+    & svg{
+        margin-right: 1rem;
+    }
+}
+
+
+@media (min-width: $lg){
+    .title{
+        font-size: 1.6rem;
+    }
+    .subTitle{
+        font-size: 55px;
+    }
+
+    .intro{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+        &__project {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            margin: 5rem 0 10rem;
+        }
+
+        &__container {
+            position: relative;
+            width: 80rem;
+            padding: 0 6.5rem 20rem 20rem;
+        }
+
+        &__infos {
+            position: absolute;
+            bottom: 10rem;
+            gap: 2rem;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            background-color: $white;
+
+            .infoAbout {
+                margin-bottom: 0;
+
+                .btn {
+                    height: 100%;
+                }
+
+                &:nth-child(1) {
+                    padding-right: 0;
+                }
+                &:nth-child(2) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                &:nth-child(3) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+
+    }
+    .natImg__container {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -15rem;
+        bottom: 0;
+        left: 0;
+        width: 600px;
+        z-index: -1;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .intro__infos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.infoAbout:first-child{
+        margin: 0;
+        padding: 3rem 4rem;
+    }
+}

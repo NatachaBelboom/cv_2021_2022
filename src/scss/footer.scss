@@ -1,0 +1,96 @@
+footer{
+    padding: 3rem 0;
+
+    & h1{
+        font-family: 'Utopia', 'Museo-sans', 'Helvetica', sans-serif;
+        font-size: 2.5rem;
+    }
+
+    & h2{
+        font-family: 'Helvetica', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #0A142E;
+        margin-bottom: 1.8rem;
+        margin-top: 4rem;
+    }
+
+    & li{
+        margin-bottom: 1.5rem;
+    }
+
+    & a:active, a:hover, a:focus{
+        text-decoration: underline;
+    }
+
+    & a{
+        text-decoration: none;
+        color: #707070;
+        font-size: 1.4rem;
+    }
+}
+
+.contactMe {
+    & span{
+        text-decoration: none;
+        color: #707070;
+        font-size: 1.4rem;
+    }
+
+    & span+span{
+        text-decoration: none;
+        color: #0A142E;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-left: 0.5rem;
+    }
+
+    &__tel{
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.social{
+    & ul{
+        list-style: none;
+    }
+
+    & li{
+        display: inline;
+        margin-right: 2.5rem;
+    }
+}
+
+@media (min-width: $lg){
+    footer {
+        & .container{
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+        }
+
+        & h2{
+            margin-top: 0;
+        }
+
+        & .followedArtist{
+
+        }
+    }
+}
+
+@media (min-width: $xl){
+    footer {
+        & .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        & h2{
+            margin-top: 0;
+        }
+    }
+}
