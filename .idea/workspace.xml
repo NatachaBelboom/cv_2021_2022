@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64538371-4351-4563-9734-c2755b0c0d28" name="Changes" comment="work in progress">
-      <change afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/project.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/course.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/course.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/intro.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/project.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/temoignages.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/temoignages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" />
-    </list>
+    <list default="true" id="64538371-4351-4563-9734-c2755b0c0d28" name="Changes" comment="work in progress" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,6 +98,7 @@
       <workItem from="1648135110540" duration="737000" />
       <workItem from="1648210766341" duration="10000" />
       <workItem from="1648236206225" duration="8164000" />
+      <workItem from="1648546490473" duration="253000" />
     </task>
     <task id="LOCAL-00001" summary="work in progress">
       <created>1646742808391</created>
@@ -124,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646742808391</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="work in progress">
+      <created>1648546522441</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648546522441</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
