@@ -37,7 +37,7 @@
 
     & h2{
         font-weight: bold;
-        font-size: 1.6rem;
+        font-size: 5.5rem;
     }
 
     &__project {
@@ -70,15 +70,14 @@
 }
 
 .infoAbout{
-    margin-bottom: 30px;
-    padding: 2.5rem 3rem;
-
-
     & div{
         display: flex;
         align-items: center;
     }
-
+    & h3{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
     & p{
         margin-top: .5rem;
         margin-left: 3.4rem;

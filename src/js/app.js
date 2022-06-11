@@ -46,40 +46,23 @@ const testimonySlider = {
 
 testimonySlider.init();
 
-const skillSlider = {
-    slider: null,
-    items: [],
-    progression: 0,
-    gap: 0,
-    time: 0,
+const burgerMenu = {
+    btn: null,
+    nav: null,
+    class: "show",
 
     init() {
-        this.slider = document.querySelector('#skillSlider');
-        this.items = document.querySelectorAll('#skillSlider .item');
-        this.gap = getComputedStyle(this.slider).gap.replace('px', '');
+        this.btn = document.querySelector('#burgerMenu');
+        this.nav = document.querySelector('#burgerMenuNav');
 
-        this.animate();
+        this.event();
     },
 
-    animate() {
-        setInterval(() => {
-            this.translate()
-        }, this.time)
-    },
-
-    stopAnimate() {
-        clearTimeout()
-    },
-
-    translate() {
-        this.progression--
-        this.items.forEach(item => {
-            item.style.transform = 'translateX(' + this.progression / 100 + 'px)';
-        })
-
-        this.animate()
+    event() {
+        this.btn.addEventListener('click', () => {
+            this.nav.classList.toggle(this.class);
+        });
     }
-}
+};
 
-skillSlider.init();
-
+burgerMenu.init();

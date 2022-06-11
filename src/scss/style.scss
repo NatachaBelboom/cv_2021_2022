@@ -5,6 +5,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body, body * {
@@ -19,6 +20,7 @@ body{
     font-family: Museo-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
+
 }
 
 .sro {
@@ -37,16 +39,21 @@ body{
     padding: 0 4rem;
     margin: 0 auto;
 }
-
-@media (min-width: $lg){
+@media (min-width: 900px){
     .container {
+        padding: 0 8rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: $lg){
+    .container, .container-img {
         padding: 0 14rem;
         margin: 0 auto;
     }
 }
 
 @media (min-width: $xl){
-    .container {
+    .container, .container-img {
         max-width: 1220px;
         padding: 0 6rem;
         margin: 0 auto;
@@ -62,3 +69,5 @@ body{
 @import "course";
 @import "project";
 @import "temoignages";
+@import "contact";
+@import "portfolio";

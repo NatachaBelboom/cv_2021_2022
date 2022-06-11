@@ -1,0 +1,29 @@
+{
+  "name": "cv_2021_2022",
+  "version": "1.0.0",
+  "description": "Site de référence : https://dribbble.com/shots/16068868-Keturon-Hostelry-Landing-Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatachaBelboom/cv_2021_2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatachaBelboom/cv_2021_2022/issues"
+  },
+  "homepage": "https://github.com/NatachaBelboom/cv_2021_2022#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.43",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.1.0"
+  }
+}

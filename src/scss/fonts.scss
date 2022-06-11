@@ -3,10 +3,12 @@
     src: url("/fonts/MuseoSansCyrl-300.woff") format("woff"),
     url("/fonts/MuseoSansCyrl-500.woff") format("woff"),
     url("/fonts/MuseoSansCyrl-700.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Utopia";
     src: url("/fonts/UtopiaStd-BoldDisp.woff") format("woff"),
     url("/fonts/UtopiaStd-SemiboldDisp.woff") format("woff");
+    font-display: swap;
 }
