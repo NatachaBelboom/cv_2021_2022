@@ -31,8 +31,16 @@
 }
 
 .intro{
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 0;
+    }
+
     &__container{
-        padding: 5rem 0 2.5rem;
+        padding: 5rem 4rem 2.5rem;
     }
 
     & h2{
@@ -65,6 +73,23 @@
         margin-top: 4rem;
         display: flex;
         flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+
+        .btn {
+            flex: 1;
+            width: 100%;
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            flex: 7;
+            padding: 2.5rem 3rem;
+            gap: 10px;
+        }
     }
 
 }
@@ -90,7 +115,37 @@
         margin-right: 1rem;
     }
 }
+@media (min-width: 500px) {
+    .intro {
+        .container {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
+        &__container {
+            position: relative;
+            flex: 1;
+            padding: 5rem 4rem 0;
+        }
+
+        .natImg__container {
+            flex: 1 0 100%;
+            max-width: 500px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+            overflow: hidden;
+
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
 
 @media (min-width: $lg){
     .title{
@@ -104,15 +159,13 @@
         position: relative;
         top: 0;
         left: 0;
-        right: 0;
+
+        &__container {
+            padding-top: 10rem;
+        }
 
         .container {
             position: relative;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: flex-end;
-            flex-wrap: wrap;
         }
 
         &__project {
@@ -120,70 +173,40 @@
             justify-content: center;
             align-items: center;
             gap: 4rem;
-            margin: 5rem 0 10rem;
-        }
-
-        &__container {
-            position: relative;
-            width: 80rem;
-            padding: 0 6.5rem 20rem 20rem;
+            margin: 5rem 0 4rem;
         }
 
         &__infos {
-            position: absolute;
-            bottom: 10rem;
+            position: relative;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
             gap: 2rem;
-            left: 0;
+            margin-top: 2px;
             right: 0;
             z-index: 2;
             background-color: $white;
 
+            .info-container {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2rem;
+            }
+
             .infoAbout {
                 margin-bottom: 0;
-
-                .btn {
-                    height: 100%;
-                }
-
-                &:nth-child(1) {
-                    padding-right: 0;
-                }
-                &:nth-child(2) {
-                    padding-left: 0;
-                    padding-right: 0;
-                }
-                &:nth-child(3) {
-                    padding-left: 0;
-                    padding-right: 0;
-                }
             }
         }
 
     }
-    .natImg__container {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: -15rem;
-        bottom: 0;
-        left: 0;
-        width: 600px;
-        z-index: -1;
-        overflow: hidden;
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
+}
 
-    .intro__infos{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    div.infoAbout:first-child{
-        margin: 0;
-        padding: 3rem 4rem;
+@media (min-width: 1120px) {
+    .intro{
+        &__infos {
+            width: calc(100% + 15rem);
+            left: -15rem;
+        }
     }
 }
