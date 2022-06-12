@@ -21,7 +21,7 @@
             <span class="burger-bar burger-bar-2"></span>
             <span class="burger-bar burger-bar-3"></span>
         </button>
-        <nav id="burgerMenuNav" class="header__nav nav">
+        <nav id="burgerMenuNav" class="header__nav nav" role="navigation">
             <h2 class="sro" role="heading" aria-level="2">La navigation</h2>
             <ul class="nav__ul">
                 <li><a href="#home">Accueil</a></li>
@@ -365,7 +365,7 @@
         </div>
     </section>
     <section class="course" id="course">
-        <div class="container">
+
             <div>
                 <h2 class="course__title title" role="heading" aria-level="2">Mon parcours</h2>
                 <h3 class="course__subTitle subTitle" role="heading" aria-level="3">Formation diversifiée</h3>
@@ -374,89 +374,90 @@
                 <a href="#" class="btn btn-primary">En savoir plus</a>
             </div>
             <div class="course__container">
-                <div class="course__card" id="item1">
-                    <a href="#course/st-luc" class="course__card--link">En savoir plus</a>
-                    <div class="img-container">
-                        <img src="assets/img/st-luc.jpg" alt="le batiment de st-Luc Liège"/>
-                    </div>
-                    <div class="course__infos">
-                        <div>
-                            <h4>ESA Saint-Luc</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25.6" height="20.67" viewBox="0 0 101.169 87.376">
-                                <g id="right" transform="translate(-29.016 -91.117)">
-                                    <g id="Groupe_4" data-name="Groupe 4" transform="translate(29.016 91.117)">
-                                        <path id="Tracé_1" data-name="Tracé 1" d="M129,134.425,87.04,92.3a4.042,4.042,0,0,0-5.716,5.716l35.06,35.223-83.326-1.185a4.042,4.042,0,1,0,0,8.085l83.326,1.185-35.06,30.267a4.042,4.042,0,1,0,5.716,5.716L129,140.141A4.041,4.041,0,0,0,129,134.425Z" transform="translate(-29.016 -91.117)" fill="#ff734c"/>
-                                    </g>
-                                </g>
-                            </svg>
+                <div class="container">
+                    <div class="course__card" id="item1">
+                        <a href="#course/st-luc" class="course__card--link">En savoir plus</a>
+                        <div class="img-container">
+                            <img src="assets/img/st-luc.jpg" alt="le batiment de st-Luc Liège"/>
                         </div>
-                        <p>Architecture d'intérieur</p>
+                        <div class="course__infos">
+                            <div>
+                                <h4>ESA Saint-Luc</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.6" height="20.67" viewBox="0 0 101.169 87.376">
+                                    <g id="right" transform="translate(-29.016 -91.117)">
+                                        <g id="Groupe_4" data-name="Groupe 4" transform="translate(29.016 91.117)">
+                                            <path id="Tracé_1" data-name="Tracé 1" d="M129,134.425,87.04,92.3a4.042,4.042,0,0,0-5.716,5.716l35.06,35.223-83.326-1.185a4.042,4.042,0,1,0,0,8.085l83.326,1.185-35.06,30.267a4.042,4.042,0,1,0,5.716,5.716L129,140.141A4.041,4.041,0,0,0,129,134.425Z" transform="translate(-29.016 -91.117)" fill="#ff734c"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p>Architecture d'intérieur</p>
+                        </div>
+                    </div>
+                    <div class="course__card" id="item2">
+                        <a href="#course/hepl" class="course__card--link">En savoir plus</a>
+                        <div class="img-container">
+                            <img src="assets/img/hepl.jpg" alt="batiment de l'HEPL de Seraing"/>
+                        </div>
+                        <div class="course__infos">
+                            <div>
+                                <h4>HEPL</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.6" height="20.67" viewBox="0 0 101.169 87.376" aria-labelledby="etoileTitle etoileDesc" role="img">
+                                    <title id="arrowTitle">Flèche orange</title>
+                                    <desc id="arrowDesc">Icone de flèche allant vers la droite de couleur orange</desc>
+                                    <g id="right" transform="translate(-29.016 -91.117)">
+                                        <g id="Groupe_4" data-name="Groupe 4" transform="translate(29.016 91.117)">
+                                            <path id="Tracé_1" data-name="Tracé 1" d="M129,134.425,87.04,92.3a4.042,4.042,0,0,0-5.716,5.716l35.06,35.223-83.326-1.185a4.042,4.042,0,1,0,0,8.085l83.326,1.185-35.06,30.267a4.042,4.042,0,1,0,5.716,5.716L129,140.141A4.041,4.041,0,0,0,129,134.425Z" transform="translate(-29.016 -91.117)" fill="#ff734c"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p>Infographie - option web</p>
+                        </div>
+                    </div>
+                    <div class="course__card" id="item3">
+                        <a href="#course/stage" class="course__card--link">En savoir plus</a>
+                        <div class="img-container">
+                            <img src="assets/img/stage.jpg" alt="image d'un ordinateur"/>
+                        </div>
+                        <div class="course__infos">
+                            <div>
+                                <h4>Stage </h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.6" height="20.67" viewBox="0 0 101.169 87.376" aria-labelledby="etoileTitle etoileDesc" role="img">
+                                    <title id="arrowTitle">Flèche orange</title>
+                                    <desc id="arrowDesc">Icone de flèche allant vers la droite de couleur orange</desc>
+                                    <g id="right" transform="translate(-29.016 -91.117)">
+                                        <g id="Groupe_4" data-name="Groupe 4" transform="translate(29.016 91.117)">
+                                            <path id="Tracé_1" data-name="Tracé 1" d="M129,134.425,87.04,92.3a4.042,4.042,0,0,0-5.716,5.716l35.06,35.223-83.326-1.185a4.042,4.042,0,1,0,0,8.085l83.326,1.185-35.06,30.267a4.042,4.042,0,1,0,5.716,5.716L129,140.141A4.041,4.041,0,0,0,129,134.425Z" transform="translate(-29.016 -91.117)" fill="#ff734c"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p>Web designer - developer</p>
+                        </div>
+                    </div>
+                    <div class="course__card" id="item4">
+                        <a href="#course/webdigit" class="course__card--link">En savoir plus</a>
+                        <div class="img-container">
+                            <img src="assets/img/webdigit.jpg" alt="logo de Webdigit"/>
+                        </div>
+                        <div class="course__infos">
+                            <div>
+                                <h4>Webdigit</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.6" height="20.67" viewBox="0 0 101.169 87.376" aria-labelledby="etoileTitle etoileDesc" role="img">
+                                    <title id="arrowTitle">Flèche orange</title>
+                                    <desc id="arrowDesc">Icone de flèche allant vers la droite de couleur orange</desc>
+                                    <g id="right" transform="translate(-29.016 -91.117)">
+                                        <g id="Groupe_4" data-name="Groupe 4" transform="translate(29.016 91.117)">
+                                            <path id="Tracé_1" data-name="Tracé 1" d="M129,134.425,87.04,92.3a4.042,4.042,0,0,0-5.716,5.716l35.06,35.223-83.326-1.185a4.042,4.042,0,1,0,0,8.085l83.326,1.185-35.06,30.267a4.042,4.042,0,1,0,5.716,5.716L129,140.141A4.041,4.041,0,0,0,129,134.425Z" transform="translate(-29.016 -91.117)" fill="#ff734c"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p>Web designer - developer</p>
+                        </div>
                     </div>
                 </div>
-                <div class="course__card" id="item2">
-                    <a href="#course/hepl" class="course__card--link">En savoir plus</a>
-                    <div class="img-container">
-                        <img src="assets/img/hepl.jpg" alt="batiment de l'HEPL de Seraing"/>
-                    </div>
-                    <div class="course__infos">
-                        <div>
-                            <h4>HEPL</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25.6" height="20.67" viewBox="0 0 101.169 87.376" aria-labelledby="etoileTitle etoileDesc" role="img">
-                                <title id="arrowTitle">Flèche orange</title>
-                                <desc id="arrowDesc">Icone de flèche allant vers la droite de couleur orange</desc>
-                                <g id="right" transform="translate(-29.016 -91.117)">
-                                    <g id="Groupe_4" data-name="Groupe 4" transform="translate(29.016 91.117)">
-                                        <path id="Tracé_1" data-name="Tracé 1" d="M129,134.425,87.04,92.3a4.042,4.042,0,0,0-5.716,5.716l35.06,35.223-83.326-1.185a4.042,4.042,0,1,0,0,8.085l83.326,1.185-35.06,30.267a4.042,4.042,0,1,0,5.716,5.716L129,140.141A4.041,4.041,0,0,0,129,134.425Z" transform="translate(-29.016 -91.117)" fill="#ff734c"/>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <p>Infographie - option web</p>
-                    </div>
-                </div>
-                <div class="course__card" id="item3">
-                    <a href="#course/stage" class="course__card--link">En savoir plus</a>
-                    <div class="img-container">
-                        <img src="assets/img/stage.jpg" alt="image d'un ordinateur"/>
-                    </div>
-                    <div class="course__infos">
-                        <div>
-                            <h4>Stage </h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25.6" height="20.67" viewBox="0 0 101.169 87.376" aria-labelledby="etoileTitle etoileDesc" role="img">
-                                <title id="arrowTitle">Flèche orange</title>
-                                <desc id="arrowDesc">Icone de flèche allant vers la droite de couleur orange</desc>
-                                <g id="right" transform="translate(-29.016 -91.117)">
-                                    <g id="Groupe_4" data-name="Groupe 4" transform="translate(29.016 91.117)">
-                                        <path id="Tracé_1" data-name="Tracé 1" d="M129,134.425,87.04,92.3a4.042,4.042,0,0,0-5.716,5.716l35.06,35.223-83.326-1.185a4.042,4.042,0,1,0,0,8.085l83.326,1.185-35.06,30.267a4.042,4.042,0,1,0,5.716,5.716L129,140.141A4.041,4.041,0,0,0,129,134.425Z" transform="translate(-29.016 -91.117)" fill="#ff734c"/>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <p>Web designer - developer</p>
-                    </div>
-                </div>
-                <div class="course__card" id="item4">
-                    <a href="#course/webdigit" class="course__card--link">En savoir plus</a>
-                    <div class="img-container">
-                        <img src="assets/img/webdigit.jpg" alt="logo de Webdigit"/>
-                    </div>
-                    <div class="course__infos">
-                        <div>
-                            <h4>Webdigit</h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25.6" height="20.67" viewBox="0 0 101.169 87.376" aria-labelledby="etoileTitle etoileDesc" role="img">
-                                <title id="arrowTitle">Flèche orange</title>
-                                <desc id="arrowDesc">Icone de flèche allant vers la droite de couleur orange</desc>
-                                <g id="right" transform="translate(-29.016 -91.117)">
-                                    <g id="Groupe_4" data-name="Groupe 4" transform="translate(29.016 91.117)">
-                                        <path id="Tracé_1" data-name="Tracé 1" d="M129,134.425,87.04,92.3a4.042,4.042,0,0,0-5.716,5.716l35.06,35.223-83.326-1.185a4.042,4.042,0,1,0,0,8.085l83.326,1.185-35.06,30.267a4.042,4.042,0,1,0,5.716,5.716L129,140.141A4.041,4.041,0,0,0,129,134.425Z" transform="translate(-29.016 -91.117)" fill="#ff734c"/>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <p>Web designer - developer</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <section class="portfolio" id="portfolio">

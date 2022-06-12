@@ -43,8 +43,9 @@ const testimonySlider = {
         })
     }
 }
-
-testimonySlider.init();
+if (document.querySelector('#testimonySlider')){
+    testimonySlider.init();
+}
 
 const burgerMenu = {
     btn: null,
@@ -64,5 +65,7 @@ const burgerMenu = {
         });
     }
 };
+if(document.querySelector('#burgerMenu')){
+    burgerMenu.init();
+}
 
-burgerMenu.init();

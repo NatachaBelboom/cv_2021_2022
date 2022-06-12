@@ -58,9 +58,9 @@
     background-color: #FF734C;
     padding: 2rem 2.5rem;
     color: white;
+    border-left: 1px solid #0F1F30;
     transition: 0.3s all ease-in;
     z-index: 199;
-    /* transform: translateX(60vw); */
     justify-content: space-around;
     align-content: stretch;
 
@@ -88,6 +88,7 @@
         text-decoration: underline;
     }
 }
+
 
 @media (min-width: $lg){
     .header {
@@ -118,6 +119,7 @@
         width: auto;
         height: auto;
         background-color: transparent;
+        border: none;
 
         & ul{
             display: flex;
